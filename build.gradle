@@ -23,7 +23,7 @@ allprojects {
 }
 
 ext {
-    VERSION_NAME = "0.8.1-SNAPSHOT"
+    VERSION_NAME = "0.8.1-TEST"
     VERSION_CODE = 6
     MIN_SDK_VERSION = 14
     TARGET_SDK_VERSION = 25
@@ -32,7 +32,7 @@ ext {
 
     supportLibraryVersion = '25.2.0'
 
-    bintrayVersion = '0.3.4'
+    bintrayVersion = '0.6.0'
     junitVersion = '4.12'
     mockitoVersion = '1.10.19'
     assertjVersion = '2.5.0'

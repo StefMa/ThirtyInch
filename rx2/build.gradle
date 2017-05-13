@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         jcenter()
+        maven { url = "https://dl.bintray.com/stefma/maven/" }
     }
     dependencies {
-        classpath "com.novoda:bintray-release:$bintrayVersion"
+        classpath "guru.stefma:bintray-release:$bintrayVersion"
     }
 }
 
@@ -45,7 +46,7 @@ dependencies {
 }
 
 publish {
-    userOrg = 'passsy'
+    userOrg = 'stefma'
     groupId = 'net.grandcentrix.thirtyinch'
     artifactId = 'thirtyinch-rx2'
     uploadName = 'ThirtyInch'

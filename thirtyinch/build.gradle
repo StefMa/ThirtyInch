@@ -1,9 +1,10 @@
 buildscript {
     repositories {
         jcenter()
+        maven { url = "https://dl.bintray.com/stefma/maven/" }
     }
     dependencies {
-        classpath "com.novoda:bintray-release:$bintrayVersion"
+        classpath "guru.stefma:bintray-release:$bintrayVersion"
     }
 }
 
@@ -55,11 +56,11 @@ dependencies {
 // usage:
 // ./gradlew clean build bintrayUpload -PbintrayUser=BINTRAY_USERNAME -PbintrayKey=BINTRAY_KEY -PdryRun=true
 publish {
-    userOrg = 'passsy'
+    userOrg = 'stefma'
     groupId = 'net.grandcentrix.thirtyinch'
     publishVersion = VERSION_NAME
     artifactId = 'thirtyinch'
     uploadName = 'ThirtyInch'
-    description = 'a Model View Presenter library for Android'
+    desc = 'a Model View Presenter library for Android'
     website = 'https://github.com/grandcentrix/ThirtyInch'
 }
