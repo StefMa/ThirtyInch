@@ -47,6 +47,10 @@ dependencies {
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"
     compile 'com.jakewharton.rxbinding:rxbinding:1.0.1'
 
+    compile('com.mikepenz:aboutlibraries:5.9.7@aar') {
+        transitive = true
+    }
+
 
     compile project(':thirtyinch')
     compile project(':rx')
