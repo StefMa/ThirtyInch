@@ -17,6 +17,9 @@ package net.grandcentrix.thirtyinch.sample;
 
 
 import com.jakewharton.rxbinding.view.RxView;
+import com.mikepenz.aboutlibraries.LibsBuilder;
+import com.mikepenz.aboutlibraries.entity.Library;
+import net.grandcentrix.thirtyinch.TiPresenter;
 
 import net.grandcentrix.thirtyinch.TiActivity;
 import net.grandcentrix.thirtyinch.logginginterceptor.LoggingInterceptor;
@@ -95,6 +98,9 @@ public class HelloWorldActivity extends TiActivity<HelloWorldPresenter, HelloWor
         mButton = (Button) findViewById(R.id.button);
         mOutput = (TextView) findViewById(R.id.output);
         mUptime = (TextView) findViewById(R.id.uptime);
+
+        new LibsBuilder().withAutoDetect(true).withAboutIconShown(true)
+                .withAboutVersionShown(true).start(this);
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
