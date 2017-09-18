@@ -10,6 +10,14 @@ buildscript {
     }
 }
 
+// For Shipkit
+plugins {
+    // the latest version can found at https://github.com/mockito/shipkit/releases
+    id "org.shipkit.java" version "0.9.75"
+}
+
+apply plugin: "org.shipkit.java"
+
 allprojects {
     repositories {
         jcenter()

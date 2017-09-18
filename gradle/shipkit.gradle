@@ -1,0 +1,12 @@
+//This file was created automatically and is intended to be checked-in.
+shipkit {
+   gitHub.repository = "stefma/thirtyinch"
+
+   //TODO when you finish trying out Shipkit, use your own token below (http://link/needed)
+   gitHub.readOnlyAuthToken = "76826c9ec886612f504d12fd4268b16721c4f85d"
+}
+
+afterEvaluate {
+    //TODO let's create a property for this setting in 'shipkit' extension
+    project.rootProject.tasks.updateReleaseNotes.publicationRepository = "https://plugins.gradle.org/plugin/org.shipkit.java"
+}
