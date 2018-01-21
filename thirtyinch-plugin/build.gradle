@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         jcenter()
+        mavenLocal()
     }
     dependencies {
         classpath "com.novoda:bintray-release:$bintrayVersion"
@@ -39,7 +40,7 @@ dependencies {
 }
 
 publish {
-    userOrg = 'grandcentrix'
+    userOrg = 'stefma'
     groupId = 'net.grandcentrix.thirtyinch'
     artifactId = 'thirtyinch-plugin'
     uploadName = 'ThirtyInch'
