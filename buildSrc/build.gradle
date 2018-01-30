@@ -1,0 +1,18 @@
+plugins {
+    id 'groovy'
+    id 'idea'
+    id 'java-gradle-plugin'
+}
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.novoda:bintray-release:0.8.0'
+    compile gradleApi()
+    compile localGroovy()
+}

@@ -29,7 +29,7 @@ dependencies {
 }
 
 // For uploading to bintray
-apply from: '../gradle/bintrayRelease.gradle'
+// apply from: '../gradle/bintrayRelease.gradle'
 configurePublish {
     artifactId = 'thirtyinch-plugin'
 }

@@ -1,3 +1,5 @@
+//import net.grandcentrix.thirtyinch.Publish
+
 apply plugin: 'com.android.library'
 
 android {
@@ -43,10 +45,10 @@ dependencies {
     androidTestImplementation "org.mockito:mockito-core:$mockitoVersion"
     androidTestImplementation "org.assertj:assertj-core:$assertjVersion"
 }
-
 // For uploading to bintray
-apply from: '../gradle/bintrayRelease.gradle'
-configurePublish {
+//apply from: '../gradle/bintrayRelease.gradle'
+Publish.printHello()
+Publish.configurePublish(project) {
     artifactId = 'thirtyinch'
     desc = 'a Model View Presenter library for Android'
 }
