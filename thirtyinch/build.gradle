@@ -1,4 +1,5 @@
-//import net.grandcentrix.thirtyinch.Publish
+import net.grandcentrix.thirtyinch.Deps
+import net.grandcentrix.thirtyinch.Publish
 
 apply plugin: 'com.android.library'
 
@@ -48,7 +49,9 @@ dependencies {
 // For uploading to bintray
 //apply from: '../gradle/bintrayRelease.gradle'
 Publish.printHello()
-Publish.configurePublish(project) {
-    artifactId = 'thirtyinch'
-    desc = 'a Model View Presenter library for Android'
+Closure x = {
+    ["artifactId": 'thirtyinch',
+     "desc"      : 'a Model View Presenter library for Android']
 }
+Deps.configPublish(project, x)
+//Publish.configurePublish(project as Project, x as Closure)
