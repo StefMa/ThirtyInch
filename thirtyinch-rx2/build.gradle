@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: "guru.stefma.androidartifacts"
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION
@@ -32,8 +33,8 @@ dependencies {
     testImplementation "org.assertj:assertj-core:$assertjVersion"
 }
 
-// For uploading to bintray
-apply from: '../gradle/bintrayRelease.gradle'
-configurePublish {
+androidArtifact {
+    groupId = 'net.grandcentrix.thirtyinch'
+    artifactVersion = VERSION_NAME
     artifactId = 'thirtyinch-rx2'
 }

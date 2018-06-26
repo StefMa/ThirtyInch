@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: "guru.stefma.androidartifacts"
 
 android {
     compileSdkVersion COMPILE_SDK_VERSION
@@ -28,8 +29,8 @@ dependencies {
     compileOnly "com.pascalwelsch.compositeandroid:fragment:$compositeAndroidVersion"
 }
 
-// For uploading to bintray
-apply from: '../gradle/bintrayRelease.gradle'
-configurePublish {
+androidArtifact {
+    groupId = 'net.grandcentrix.thirtyinch'
+    artifactVersion = VERSION_NAME
     artifactId = 'thirtyinch-plugin'
 }
