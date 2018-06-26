@@ -29,8 +29,8 @@ dependencies {
     compileOnly "com.pascalwelsch.compositeandroid:fragment:$compositeAndroidVersion"
 }
 
+version = VERSION_NAME
+group = 'net.grandcentrix.thirtyinch'
 androidArtifact {
-    groupId = 'net.grandcentrix.thirtyinch'
-    artifactVersion = VERSION_NAME
     artifactId = 'thirtyinch-plugin'
 }

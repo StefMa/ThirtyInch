@@ -45,8 +45,8 @@ dependencies {
     androidTestImplementation "org.assertj:assertj-core:$assertjVersion"
 }
 
+version = VERSION_NAME
+group = 'net.grandcentrix.thirtyinch'
 androidArtifact {
-    groupId = 'net.grandcentrix.thirtyinch'
-    artifactVersion = VERSION_NAME
     artifactId = 'thirtyinch'
 }
