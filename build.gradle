@@ -4,10 +4,12 @@ buildscript {
     repositories {
         jcenter()
         google()
+        mavenLocal()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.vanniktech:gradle-android-junit-jacoco-plugin:0.10.0'
+        classpath 'guru.stefma.androidartifacts:androidartifacts:dev'
     }
 }
 
